@@ -1,32 +1,18 @@
-//space remove
-
+// i love c launguage   count words...
 #include<stdio.h>
 #include<string.h>
-
 int main(){
-
-int a[200],b[200];
-printf("Enter your string");
-scanf("%s",&a[200]);
-int j=0;
-for(int i=0;a[i]!='\0';i++){
-        if(a[i]==' '){
-          b[i]==a[i];
-          j++;
-        }
-    b[j]='\0';
-}
-printf("%s",b);
-
-
-
-
-
-
-
-
-
-
+char st[10];
+ gets(st);
+char ch=' ';
+ int count=0;
+ for(int i=0;st[i]!='\0';i++){
+      if(st[i]==ch){
+        count++;
+      }
+ }
+    printf("Sentence mai words: %d",count);
+    printf("Sentence mai space: %d",count);
 
 
 
@@ -41,3 +27,4 @@ printf("%s",b);
 
 
 }
+
