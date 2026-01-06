@@ -1,26 +1,29 @@
-
+//pallidrome aetle reverase thy ske (abcd) not pallidrome aetle (Abbd) teno reverse teno tej thay
 #include<stdio.h>
-int main(){
-int  num,orignal,reminder,reverse=0;
+#include<string.h>
+int main(){//abbbc
 
-printf("Enter your number: ");
-scanf("%d",&num);
+char c[10];
+ gets(c);
+strlen(c);
+int found =0;
 
-orignal=num;
-while(num!=0){
-    reminder=num%10;
-    reverse=reverse*10+reminder;
-    num=num/10;
+for(int i = 0;i=strlen(c)-1;i++){
+      char  ch=c[strlen(c)-1-i];
+    if(ch==c[i]){
+        found=1;
+    }
+    else{
+        found=-1;
+    }
 }
 
-if(orignal==reverse){
-    printf("The number is pallydrome");
+if(found==1){
+    printf("pallidrome");
 }
 else{
-    printf("The number is not pallydrome");
+    printf("Not pallidrome");
 }
-
-
 
 
 
